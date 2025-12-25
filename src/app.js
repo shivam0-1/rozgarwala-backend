@@ -6,6 +6,7 @@ import profileRoutes from "./routes/profile.routes.js";
 import contactRoutes from "./routes/contact.routes.js";
 import adminAuthRoutes from "./routes/adminAuth.routes.js";
 import adminContactRoutes from "./routes/adminContact.routes.js";
+import workerRoutes from "./routes/worker.routes.js"
 
 const app = express();
 
@@ -23,5 +24,6 @@ app.use("/api/profile", profileRoutes);
 app.use("/api/contact", contactRoutes);
 app.use("/api/admin/auth", adminAuthRoutes);
 app.use("/api/admin", adminContactRoutes);
+app.use("/api/workers", workerRoutes);
 
 export default app;
